@@ -1,5 +1,6 @@
-* {margin: 0;
-padding: 0;}
+* { box-sizing: border-box;
+    margin: 0;
+    padding: 0;}
 
 body {
     background-color: rgb(131, 105, 70);
@@ -54,8 +55,8 @@ body {
 }
 
 .categories h2 {
+    padding-top: 6rem;
     text-align: center;
-    padding-top: 2rem;
     padding-bottom: 0.5rem;
     
 
@@ -63,28 +64,109 @@ body {
 .categories p {
     
     text-align: center;
-    padding-bottom: 2rem;
+    padding-bottom: 5rem;
 }
 
 
 .top-catalog {
     display: flex;
     flex-wrap: nowrap;
+    justify-content: space-between;
     width: 100%;
     gap: 2.5rem;
+    padding: 1%;
 }
 .top-catalog article {
     flex: 1;
-    position: relative;
+    border-radius: 1rem;
     overflow: hidden;
-    margin-right: 3rem;
-    margin-left: 3rem;
+    width: 100%;
+    min-height: 60vh;
 }
 .top-catalog article img {
     width: 100%;
     height: 50%;
     object-fit: cover;
+    object-position: top;
     display: block;
+    border-radius: 0 0 1rem 1rem ;
+    padding-bottom: 0.5rem;
+}
+.top-catalog article button {
+    background-color: rgb(32, 18, 1);
+    color: #f5f2f2;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
 }
 
 
+.text-milk-shakes h2 {
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 0.5rem;
+}
+.text-milk-shakes p {
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.milk-shakes {
+     display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 100%;
+    gap: 2.5rem;
+    padding: 1%;
+}
+
+.milk-shakes article {
+    flex: 1;
+    border-radius: 1rem;
+    overflow: hidden;
+    width: 100%;
+    min-height: 60vh;
+}
+.milk-shakes article img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+    border-radius: 0 0 1rem 1rem ;
+    padding-bottom: 0.5rem;
+}
+
+.milk-shakes article button {
+    background-color: rgb(32, 18, 1);
+    color: #f5f2f2;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+
+footer {
+    background-color: rgb(65, 40, 3);
+    padding: 3rem 1rem;
+}
+
+footer nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.catalog h3, .categories h3, .about h3 {
+    color: #f5f2f2;
+    margin-bottom: 1.5rem;
+}
+footer ul {
+    cursor: pointer;
+    list-style: none;
+    padding: 0;
+}
+footer li {
+    margin-bottom: 0.5rem;
+}
